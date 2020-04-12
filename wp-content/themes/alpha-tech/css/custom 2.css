@@ -1,0 +1,144 @@
+/* -----------------------------------------------------------------
+## Custom CSS
+----------------------------------------------------------------- */
+/* Add here all your CSS customizations */
+
+.alpha-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+    padding-bottom: 34px;
+}
+
+.widget-border{
+    border: 1px solid gainsboro;
+    padding: 27px 0px;
+    border-top: 5px solid #4ecdc4;
+}
+
+.widget-border .widget__title .widget__title-text{
+    padding: 0px 26px;
+}
+
+
+.news-feed-top{
+    margin-top: 40px;
+}
+
+.sub-news-black{
+    background: black;
+    padding: 27px;
+    margin-top: 70px;
+    padding-bottom: 0px;
+}
+
+.slide-val{
+    padding: 1px 9px;
+}
+
+.slide-info{
+    cursor: pointer;
+}
+
+.slide-val-positive{
+    background: #9cf4dc;
+}
+
+.slide-val-negative{
+    background: #ffe1e1;
+}
+
+.marquee-flow{
+    border: 1px solid;
+    overflow: hidden;
+    padding: 0px;
+    margin-top: 8px;
+    border-left: 34px solid;
+}
+
+.typescale-sm{
+    font-size: 1.3rem;
+}
+
+.news-ticker-m{
+    margin-bottom: -30px;
+}
+
+/* Marquee Effect */
+.marquee {
+    width: 100%;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee div:hover {
+    animation-play-state: paused
+}
+.marquee div {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.d-flex-marq{
+    display: flex;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.d-inlinee{
+    display: inline-block
+}
+
+.d-flex-marq li{
+    list-style: none;
+    margin-right: 14px;
+}
+
+.d-content{
+    display: contents!important;
+}
+
+.search-res{
+    outline: 0;
+    height: 62px;
+    max-width: 800px;
+    font-size: 18px!important;
+    padding-left: 24px;
+    font-weight: bold!important;
+    border: 0px !important;
+    background: transparent !important;
+    border: 0px !important;
+    box-shadow: 0px 0px !important;
+    border-bottom: 3px solid !important;
+    border-radius: 0px !important;
+}
+/* .marquee{
+    display:block;
+  position:relative;
+  width:80%;
+  animation:scroll 10s linear infinite;
+  padding:3px;
+  }
+  
+  .marquee:hover {
+      animation-play-state: paused
+  }
+  
+  .img1 {
+    width:150px;
+    height:150px;
+    background-color:#f6f6f6;
+    margin:3px;
+    float:left;
+  } */
+  
+  /* Make it move */
+  /* @keyframes scroll{
+  0% {left:80%;}
+  100% {left:-80%;}
+  } */

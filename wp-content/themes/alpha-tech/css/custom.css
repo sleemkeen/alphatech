@@ -1,0 +1,36 @@
+/* -----------------------------------------------------------------
+## Custom CSS
+----------------------------------------------------------------- */
+/* Add here all your CSS customizations */
+
+img.img-footer {
+  width: 120px !important;
+}
+
+.navigation-bar {
+  background: linear-gradient(45deg, #ff0065, #6666ff);
+}
+
+.navigation--main > li > a,
+.navigation-bar-btn {
+  color: white;
+}
+
+.adv-down {
+  margin-bottom: 20px;
+}
+
+.search-form--btn-inside .search-form__input {
+  height: 65px;
+  font-weight: bold;
+  font-size: 29px;
+  padding-left: 30px;
+}
+
+.search-result {
+  margin: 33px 0px;
+}
+
+.category-tile--sm .inner-category {
+  min-height: 210px;
+}
