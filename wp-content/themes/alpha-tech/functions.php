@@ -127,6 +127,27 @@ function wpt_theme_js() {
 add_action( 'wp_enqueue_scripts', 'wpt_theme_js' );
 
 
+add_filter( 'excerpt_length', 'wpt_excerpt_length');
+
+function wpt_excerpt_length() {
+  return 20;
+}
+
+function excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt);
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  } 
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  return $excerpt;
+}
+ 
+
+
+
 
 
 
