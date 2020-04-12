@@ -41,16 +41,14 @@ get_header();
 
                                 <div class="col-xs-6 col-sm-12">
                                     <article class="post post--vertical cat-4">
-                                        <div class="post__thumb"><a href="#single-url"><img
+                                        <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img
                                                     src="<?php echo get_template_directory_uri(); ?>/img/demo/sport-3-2_1.jpg"></a></div>
                                         <div class="post__text">
-                                            <h3 class="post__title typescale-0"><a href="#">USA Cycling
-                                                    championships in Knoxville: 5 things to know</a></h3>
+                                            <h3 class="post__title typescale-0"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                             <div class="post__meta"><time class="time published"
-                                                    datetime="2016-08-20T08:53+00:00"
+                                                    datetime="<?php the_time('Y-m/d g:i A') ?>"
                                                     title="August 20, 2016 at 08:53 am"><i
-                                                        class="mdicon mdicon-schedule"></i>2
-                                                    hours ago</time></div>
+                                                        class="mdicon mdicon-schedule"></i></time></div>
                                         </div>
                                     </article>
                                 </div>
@@ -85,19 +83,17 @@ get_header();
                                         <?php if ( $the_query1->have_posts() ) : while ( $the_query1->have_posts() ) : $the_query1->the_post(); ?>
 
                                     <article class="post post--vertical cat-1">
-                                        <div class="post__thumb"><a href="#single-url"><img src="<?php echo get_template_directory_uri(); ?>/img/fortnite.jpg"></a>
+                                        <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/fortnite.jpg"></a>
                                         </div>
                                         <div class="post__text">
-                                            <h3 class="post__title typescale-3"><a href="#single-url">
+                                            <h3 class="post__title typescale-3"><a href="<?php the_permalink(); ?>">
                                                    <?php the_title(); ?></a></h3>
                                             <div class="post__excerpt hidden-xs hidden-sm"><?php the_content(); ?></div>
                                             <div class="post__meta"><span class="entry-author">By <a href="#"
-                                                        class="entry-author__name">Adeniran
-                                                        Opeyemi</a></span> <time class="time published"
-                                                    datetime="2016-08-20T08:53+00:00"
+                                                        class="entry-author__name"><?php echo get_the_author(); ?></a></span> <time class="time published"
+                                                    datetime="<?php the_time('Y-m/d g:i A') ?>"
                                                     title="August 20, 2016 at 08:53 am"><i
-                                                        class="mdicon mdicon-schedule"></i>2
-                                                    hours ago</time></div>
+                                                        class="mdicon mdicon-schedule"></i></time></div>
                                         </div>
                                     </article>
 
@@ -126,16 +122,14 @@ get_header();
                                         <?php if ( $the_query1->have_posts() ) : while ( $the_query1->have_posts() ) : $the_query1->the_post(); ?>
                                         <div class="col-xs-6 col-sm-12">
                                             <article class="post post--vertical cat-4">
-                                                <div class="post__thumb"><a href="#single-url"><img
+                                                <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img
                                                             src="<?php echo get_template_directory_uri(); ?>/img/demo/sport-3-2_1.jpg"></a></div>
                                                 <div class="post__text">
-                                                    <h3 class="post__title typescale-0"><a href="#">USA Cycling
-                                                            championships in Knoxville: 5 things to know</a></h3>
+                                                    <h3 class="post__title typescale-0"><a href="#"><?php the_title(); ?></a></h3>
                                                     <div class="post__meta"><time class="time published"
-                                                            datetime="2016-08-20T08:53+00:00"
-                                                            title="August 20, 2016 at 08:53 am"><i
-                                                                class="mdicon mdicon-schedule"></i>2
-                                                            hours ago</time></div>
+                                                            datetime="<?php the_time('Y-m/d g:i A') ?>"
+                                                            title=""><i
+                                                                class="mdicon mdicon-schedule"></i></time></div>
                                                 </div>
                                             </article>
                                         </div>
@@ -178,22 +172,20 @@ get_header();
 
                                     <div class="list-item">
                                         <article class="post post--horizontal post--horizontal-sm cat-2">
-                                            <div class="post__thumb"><a href="#single-url"><img
+                                            <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img
                                                         src="<?php echo get_template_directory_uri(); ?>/img/demo/sport-5-4_3.jpg"></a></div>
                                             <div class="post__text">
-                                                <h3 class="post__title typescale-2"><a href="#single-url">Premier
-                                                        League stadiums ranked by local temperature: Where is
-                                                        warmest?</a></h3>
-                                                <div class="post__excerpt">The Shadow Brokers group unleashed an
-                                                    exploit that fueled a global ransomware attack. Now they say
-                                                    they've got more where that came from.</div>
+                                                <h3 class="post__title typescale-2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                                <div class="post__excerpt"><?php echo strip_tags( excerpt(40) ); ?> </div>
                                                 <div class="post__meta"><span class="entry-author">By <a href="#"
-                                                            class="entry-author__name">Adeniran Opeyemi</a></span> <time
-                                                        class="time published" datetime="2016-08-20T08:53+00:00"
-                                                        title="August 20, 2016 at 08:53 am"><i
-                                                            class="mdicon mdicon-schedule"></i>2
-                                                        hours ago</time> <a href="#" title="21 comments"><i
-                                                            class="mdicon mdicon-chat_bubble_outline"></i>21</a></div>
+                                                            class="entry-author__name"><?php echo get_the_author(); ?></a></span> <time class="time published"
+                                                            datetime="<?php the_time('Y-m/d g:i A') ?>"
+
+                                                            <?php $author_comments = count(get_comments($args1)); ?>
+                                                            title=""><i
+                                                                class="mdicon mdicon-schedule"></i></time>
+                                                                 <a href="#" title="{{$author_comments}} comments"><i
+                                                            class="mdicon mdicon-chat_bubble_outline"></i>{{$author_comments}}</a></div>
                                             </div>
                                         </article>
                                     </div>
