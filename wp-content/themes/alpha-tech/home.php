@@ -48,7 +48,9 @@ get_header();
                                             <div class="post__meta"><time class="time published"
                                                     datetime="<?php the_time('Y-m/d g:i A') ?>"
                                                     title="August 20, 2016 at 08:53 am"><i
-                                                        class="mdicon mdicon-schedule"></i></time></div>
+                                                        class="mdicon mdicon-schedule"></i>
+                                                        <?php the_time('Y-m/d g:i A') ?>
+                                                    </time></div>
                                         </div>
                                     </article>
                                 </div>
@@ -93,7 +95,9 @@ get_header();
                                                         class="entry-author__name"><?php echo get_the_author(); ?></a></span> <time class="time published"
                                                     datetime="<?php the_time('Y-m/d g:i A') ?>"
                                                     title="August 20, 2016 at 08:53 am"><i
-                                                        class="mdicon mdicon-schedule"></i></time></div>
+                                                        class="mdicon mdicon-schedule"></i>
+                                                        <?php the_time('Y-m/d g:i A') ?>
+                                                    </time></div>
                                         </div>
                                     </article>
 
@@ -129,7 +133,9 @@ get_header();
                                                     <div class="post__meta"><time class="time published"
                                                             datetime="<?php the_time('Y-m/d g:i A') ?>"
                                                             title=""><i
-                                                                class="mdicon mdicon-schedule"></i></time></div>
+                                                                class="mdicon mdicon-schedule"></i>
+                                                                <?php the_time('Y-m/d g:i A') ?>
+                                                            </time></div>
                                                 </div>
                                             </article>
                                         </div>
@@ -183,7 +189,9 @@ get_header();
 
                                                             <?php $author_comments = count(get_comments($args1)); ?>
                                                             title=""><i
-                                                                class="mdicon mdicon-schedule"></i></time>
+                                                                class="mdicon mdicon-schedule"></i>
+                                                                <?php the_time('Y-m/d g:i A') ?>
+                                                            </time>
                                                                  <a href="#" title="{{$author_comments}} comments"><i
                                                             class="mdicon mdicon-chat_bubble_outline"></i><?php echo $author_comments ?></a></div>
                                             </div>
