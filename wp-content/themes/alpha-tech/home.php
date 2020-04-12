@@ -42,7 +42,7 @@ get_header();
                                 <div class="col-xs-6 col-sm-12">
                                     <article class="post post--vertical cat-4">
                                         <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img
-                                                    src="<?php echo get_template_directory_uri(); ?>/img/demo/sport-3-2_1.jpg"></a></div>
+                                                    src="<?php echo get_the_post_thumbnail_url() ?>"></a></div>
                                         <div class="post__text">
                                             <h3 class="post__title typescale-0"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                             <div class="post__meta"><time class="time published"
@@ -83,7 +83,7 @@ get_header();
                                         <?php if ( $the_query1->have_posts() ) : while ( $the_query1->have_posts() ) : $the_query1->the_post(); ?>
 
                                     <article class="post post--vertical cat-1">
-                                        <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/fortnite.jpg"></a>
+                                        <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url() ?>"></a>
                                         </div>
                                         <div class="post__text">
                                             <h3 class="post__title typescale-3"><a href="<?php the_permalink(); ?>">
@@ -123,7 +123,7 @@ get_header();
                                         <div class="col-xs-6 col-sm-12">
                                             <article class="post post--vertical cat-4">
                                                 <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img
-                                                            src="<?php echo get_template_directory_uri(); ?>/img/demo/sport-3-2_1.jpg"></a></div>
+                                                            src="<?php echo get_the_post_thumbnail_url() ?>"></a></div>
                                                 <div class="post__text">
                                                     <h3 class="post__title typescale-0"><a href="#"><?php the_title(); ?></a></h3>
                                                     <div class="post__meta"><time class="time published"
@@ -173,7 +173,7 @@ get_header();
                                     <div class="list-item">
                                         <article class="post post--horizontal post--horizontal-sm cat-2">
                                             <div class="post__thumb"><a href="<?php the_permalink(); ?>"><img
-                                                        src="<?php echo get_template_directory_uri(); ?>/img/demo/sport-5-4_3.jpg"></a></div>
+                                                        src="<?php echo get_the_post_thumbnail_url() ?>"></a></div>
                                             <div class="post__text">
                                                 <h3 class="post__title typescale-2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                                 <div class="post__excerpt"><?php echo strip_tags( excerpt(40) ); ?> </div>
@@ -185,7 +185,7 @@ get_header();
                                                             title=""><i
                                                                 class="mdicon mdicon-schedule"></i></time>
                                                                  <a href="#" title="{{$author_comments}} comments"><i
-                                                            class="mdicon mdicon-chat_bubble_outline"></i>{{$author_comments}}</a></div>
+                                                            class="mdicon mdicon-chat_bubble_outline"></i><?php echo $author_comments ?></a></div>
                                             </div>
                                         </article>
                                     </div>
